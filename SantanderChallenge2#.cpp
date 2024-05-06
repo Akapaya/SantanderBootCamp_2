@@ -36,7 +36,9 @@ int main()
     std::cout << "Insert the number of defeats of player\n";
     std::cin >> defeatCount;
 
-    std::cout << CalculateRanking(victoryCount, defeatCount) << "\n";
+    std::string result = CalculateRanking(victoryCount, defeatCount);
+
+    std::cout << "O Heroi tem de saldo de " <<(victoryCount - defeatCount)<< " esta no nível de " << result << "\n";
 }
 
 
